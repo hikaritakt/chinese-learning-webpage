@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉语汉字学习作业</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>汉语汉字学习作业</h1>
+
+    <div class="section">
+        <h2>汉字综合作业</h2>
+        <p>请写出以下汉字的拼音和笔画顺序：</p>
+        <ul>
+            <li>人</li>
+            <li>口</li>
+            <li>手</li>
+            <li>足</li>
+            <li>目</li>
+        </ul>
+        <p>请用以下汉字组词：</p>
+        <ul>
+            <li>耳（ ）</li>
+            <li>舌（ ）</li>
+            <li>牙（ ）</li>
+            <li>眉（ ）</li>
+            <li>发（ ）</li>
+        </ul>
+        <p>请用以下汉字造句：</p>
+        <ul>
+            <li>心：</li>
+            <li>力：</li>
+            <li>气：</li>
+            <li>方：</li>
+            <li>半：</li>
+        </ul>
+        <p>请写出以下汉字的近义词：</p>
+        <ul>
+            <li>多（ ）</li>
+            <li>大（ ）</li>
+            <li>上（ ）</li>
+            <li>来（ ）</li>
+            <li>黑（ ）</li>
+        </ul>
+        <p>请写出以下汉字的反义词：</p>
+        <ul>
+            <li>左（ ）</li>
+            <li>前（ ）</li>
+            <li>高（ ）</li>
+            <li>远（ ）</li>
+            <li>快（ ）</li>
+        </ul>
+        <p>选择题：“石”字的读音是？</p>
+        <input type="radio" name="synExam1" value="shí"> shí
+        <input type="radio" name="synExam1" value="sí"> sí
+        <input type="radio" name="synExam1" value="shī"> shī
+        <p>填空题：“鸟”字的第 3 笔是____。</p>
+        <input type="text" id="synExam2">
+        <p>判断题：“尖”是上下结构的字，上面是“小”，下面是“大”。</p>
+        <input type="radio" name="synExam3" value="true"> 对
+        <input type="radio" name="synExam3" value="false"> 错
+        <p>选择题：“春”字一共有多少画？</p>
+        <input type="radio" name="synExam4" value="8"> 8
+        <input type="radio" name="synExam4" value="9"> 9
+        <input type="radio" name="synExam4" value="10"> 10
+        <p>填空题：“果”字的部首是____。</p>
+        <input type="text" id="synExam5">
+        <p>判断题：“少”字有两个读音，分别是“shǎo”和“shào”。</p>
+        <input type="radio" name="synExam6" value="true"> 对
+        <input type="radio" name="synExam6" value="false"> 错
+        <p>选择题：以下哪个字是左右结构？</p>
+        <input type="radio" name="synExam7" value="星"> 星
+        <input type="radio" name="synExam7" value="田"> 田
+        <input type="radio" name="synExam7" value="日"> 日
+        <p>填空题：“林”是由两个____字组成。</p>
+        <input type="text" id="synExam8">
+        <p>判断题：“里”和“外”是一对反义词。</p>
+        <input type="radio" name="synExam9" value="true"> 对
+        <input type="radio" name="synExam9" value="false"> 错
+        <button onclick="checkAnswer('综合作业')">提交答案</button>
+    </div>
+
+    <div class="section">
+        <h2>部首作业</h2>
+        <p>请写出以下部首组成的至少两个汉字：</p>
+        <ul>
+            <li>木</li>
+            <li>氵</li>
+            <li>日</li>
+            <li>女</li>
+            <li>金</li>
+        </ul>
+        <p>选择题：“星”字的部首是？</p>
+        <input type="radio" name="radicalExam1" value="日"> 日
+        <input type="radio" name="radicalExam1" value="生"> 生
+        <input type="radio" name="radicalExam1" value="星"> 星
+        <p>填空题：“树”字的部首是____。</p>
+        <input type="text" id="radicalExam2">
+        <p>判断题：“草”字的部首是“艹”。</p>
+        <input type="radio" name="radicalExam3" value="true"> 对
+        <input type="radio" name="radicalExam3" value="false"> 错
+        <p>选择题：以下哪个字的部首是“月”？</p>
+        <input type="radio" name="radicalExam4" value="明"> 明
+        <input type="radio" name="radicalExam4" value="朋"> 朋
+        <input type="radio" name="radicalExam4" value="阳"> 阳
+        <p>填空题：“海”字去掉部首还剩____画。</p>
+        <input type="text" id="radicalExam5">
+        <p>判断题：“跑”字的部首是“包”。</p>
+        <input type="radio" name="radicalExam6" value="true"> 对
+        <input type="radio" name="radicalExam6" value="false"> 错
+        <button onclick="checkAnswer('部首作业')">提交答案</button>
+    </div>
+
+    <div class="section">
+        <h2>考试模拟题</h2>
+        <div id="examQuestions"></div>
+        <button onclick="checkAnswer('考试模拟题')">提交答案</button>
+        <button onclick="resetExam()">重新练习</button>
+    </div>
+
+    <script>
+        const examQuestionBank = [
+            {
+                type: '选择题',
+                question: '“天”的正确拼音是？',
+                options: ['tiān', 'tián', 'tiǎn'],
+                answer: 'tiān'
+            },
+            {
+                type: '选择题',
+                question: '“山”字的笔画数是？',
+                options: ['2', '3', '4'],
+                answer: '3'
+            },
+            {
+                type: '填空题',
+                question: '“月”字共____画。',
+                answer: '4'
+            },
+            {
+                type: '填空题',
+                question: '“水”的拼音是____。',
+                answer: 'shuǐ'
+            },
+            {
+                type: '判断题',
+                question: '“火”字的部首是“火”。',
+                answer: 'true'
+            },
+            {
+                type: '判断题',
+                question: '“雨”字是独体字。',
+                answer: 'true'
+            },
+            {
+                type: '选择题',
+                question: '“好”字的正确读音是？',
+                options: ['hǎo', 'hào'],
+                answer: 'hǎo'
+            },
+            {
+                type: '填空题',
+                question: '“大”加一笔可以变成____字。',
+                answer: '天,夫,太'
+            },
+            {
+                type: '判断题',
+                question: '“田”字是上下结构。',
+                answer: 'false'
+            },
+            {
+                type: '选择题',
+                question: '“子”字的第三笔是？',
+                options: ['横钩', '竖钩', '横折'],
+                answer: '横钩'
+            },
+            {
+                type: '组词题',
+                question: '请用“花”组词（至少两个）：____',
+                answer: ''
+            },
+            {
+                type: '造句题',
+                question: '请用“我”“爱”“中国”造句：____',
+                answer: ''
+            },
+            {
+                type: '笔顺判断题',
+                question: '“先”字的第一笔是横。',
+                answer: 'true'
+            },
+            {
+                type: '部首选择题',
+                question: '“河”字的部首是？',
+                options: ['氵', '可', '口'],
+                answer: '氵'
+            },
+            {
+                type: '选择题',
+                question: '“学”字的拼音正确的是？',
+                options: ['xué', 'xüé', 'xié'],
+                answer: 'xué'
+            },
+            {
+                type: '填空题',
+                question: '“书”字的笔顺是____。',
+                answer: '横折、横折钩、竖、点'
+            },
+            {
+                type: '判断题',
+                question: '“笔”是上下结构的字，上面是“竹”字头。',
+                answer: 'true'
+            },
+            {
+                type: '选择题',
+                question: '“美丽”的近义词是？',
+                options: ['漂亮', '丑陋', '可爱'],
+                answer: '漂亮'
+            },
+            {
+                type: '填空题',
+                question: '“开”的反义词是____。',
+                answer: '关'
+            },
+            {
+                type: '词语搭配题',
+                question: '请将“吃”与合适的词语连线（米饭、足球、衣服）',
+                answer: '米饭'
+            },
+            {
+                type: '选择题',
+                question: '“森”字是由几个“木”组成的？',
+                options: ['2', '3', '4'],
+                answer: '3'
+            },
+            {
+                type: '填空题',
+                question: '“奶”字的部首是____，右边是____字。',
+                answer: '女,乃'
+            },
+            {
+                type: '判断题',
+                question: '“云”和“会”都有“云”这个部分，读音也相同。',
+                answer: 'false'
+            },
+            {
+                type: '选择题',
+                question: '“红”字的拼音是？',
+                options: ['hóng', 'hǒng', 'hòng'],
+                answer: 'hóng'
+            },
+            {
+                type: '填空题',
+                question: '“中”字的第二笔是____。',
+                answer: '横折'
+            },
+            {
+                type: '判断题',
+                question: '“从”是左右结构的字。',
+                answer: 'true'
+            },
+            {
+                type: '选择题',
+                question: '“雨”和“雪”都和什么有关？',
+                options: ['水', '木', '火'],
+                answer: '水'
+            },
+            {
+                type: '填空题',
+                question: '“秋”字是由____和____组成。',
+                answer: '禾,火'
+            },
+            {
+                type: '判断题',
+                question: '“只”有两个读音。',
+                answer: 'true'
+            }
+        ];
+
+        function getRandomQuestions() {
+            const shuffledQuestions = examQuestionBank.sort(() => Math.random() - 0.5);
+            return shuffledQuestions.slice(0, 10); // 每次取 10 道题
+        }
+
+        function renderQuestions() {
+            const examQuestionsDiv = document.getElementById('examQuestions');
+            examQuestionsDiv.innerHTML = '';
+            const questions = getRandomQuestions();
+            questions.forEach((question, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.innerHTML = `<p>${question.type}：${question.question}</p>`;
+                if (question.type === '选择题') {
+                    question.options.forEach((option, optionIndex) => {
+                        const input = document.createElement('input');
+                        input.type = 'radio';
+                        input.name = `exam${index}`;
+                        input.value = option;
+                        questionDiv.appendChild(input);
+                        questionDiv.appendChild(document.createTextNode(option));
+                        questionDiv.appendChild(document.createElement('br'));
+                    });
+                } else if (question.type === '判断题') {
+                    const trueInput = document.createElement('input');
+                    trueInput.type = 'radio';
+                    trueInput.name = `exam${index}`;
+                    trueInput.value = 'true';
+                    questionDiv.appendChild(trueInput);
+                    questionDiv.appendChild(document.createTextNode('对'));
+                    const falseInput = document.createElement('input');
+                    falseInput.type = 'radio';
+                    falseInput.name = `exam${index}`;
+                    falseInput.value = 'false';
+                    questionDiv.appendChild(falseInput);
+                    questionDiv.appendChild(document.createTextNode('错'));
+                    questionDiv.appendChild(document.createElement('br'));
+                } else if (['填空题', '组词题', '造句题', '词语搭配题'].includes(question.type)) {
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.id = `exam${index}`;
+                    questionDiv.appendChild(input);
+                }
+                examQuestionsDiv.appendChild(questionDiv);
+            });
+        }
+
+        function checkAnswer(section) {
+            alert(`你提交了 ${section} 的答案，我们会尽快批改！`);
+        }
+
+        function resetExam() {
+            renderQuestions();
+        }
+
+        // 页面加载时渲染题目
+        renderQuestions();
+    </script>
+</body>
+
+</html>
+    
